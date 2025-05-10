@@ -1,0 +1,10 @@
+CONCLUSIONES
+
+1) Pruebas automatizadas Exitosas:
+    Las pruebas automatizadas de API realizadas sobre el servicio de DemoBlaze se desarrollaron exitosamente: Esto incluye los servicios de Registro y Acceso al Sistema.
+2) Puntos de Mejora:
+    Registro de Usuario (/signUp):
+        - Cuando se registra un nuevo usuario exitosamente, el RESPONSE esta devolviendo un json vacio, lo cual genera insertidumbre sobre si el registro del usuario se hizo existosamente. Esto deberia ser mejorado
+    Acceso al Sistema (/login):
+        - Cuando se intenta acceder al sistema con un usuario o contraseña incorrecta el servicio esta devolviendo en sus RESPONSE un Status de 200. El status correcto que deberia devolver en estos casos es de 4xx, ya que estos son los status correctos para las solicitudes incorrectas del usuario.
+        - Cuando se intenta Logear con el servicio y este tiene un usuario correcto, se puede usar la contraseña 'MTIzNDU=' lo cual deja una brecha de seguridad.
