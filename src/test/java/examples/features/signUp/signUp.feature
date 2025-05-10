@@ -9,7 +9,7 @@ Feature: Registro de un nuevo cliente en DemoBlaze - https://www.demoblaze.com/i
     * print 'Dominio de Demo Blaze ' , domainURL
 
 
-  Scenario: Registrar un nuevo cliente exitosamente
+  Scenario: REGISTRAR un nuevo CLIENTE EXITOSAMENTE
     * def username = generarNombreUsuario()
     * print 'Se guardara el usuario con el username ', username
     Given url domainURL + path
@@ -24,7 +24,7 @@ Feature: Registro de un nuevo cliente en DemoBlaze - https://www.demoblaze.com/i
     And assert responseTime < 5000
 
 
-  Scenario: Intentar Registrar un cliente ya existente
+  Scenario: Intentar REGISTRAR un CLIENTE EXISTENTE
     Given url domainURL + path
     And request { username: '#(dataRegisteredUser.user.username)', password: '#(dataRegisteredUser.user.password)' }
     When method POST

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.769s</div>
+<div class="counter">0.809s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,15 +79,15 @@
 </tr>
 </thead>
 <tr>
-<td class="success">[1:12] Registrar un nuevo cliente exitosamente</td>
+<td class="success">[1:12] REGISTRAR un nuevo CLIENTE EXITOSAMENTE</td>
 <td class="success">testSignUp()[1][1]</td>
-<td class="success">0.303s</td>
+<td class="success">0.308s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">[2:27] Intentar Registrar un cliente ya existente</td>
+<td class="success">[2:27] Intentar REGISTRAR un CLIENTE EXISTENTE</td>
 <td class="success">testSignUp()[1][2]</td>
-<td class="success">0.466s</td>
+<td class="success">0.501s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -95,11 +95,11 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>16:58:53.664 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-16:58:53.678 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
-16:58:53.689 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
-16:58:53.693 [Test worker] INFO  com.intuit.karate - [print] Se guardara el usuario con el username  davidSofkacbz1v9 
-16:58:53.699 [Test worker] DEBUG com.intuit.karate - request:
+<pre>17:54:46.255 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:54:46.264 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:54:46.273 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+17:54:46.278 [Test worker] INFO  com.intuit.karate - [print] Se guardara el usuario con el username  davidSofkartg7ow 
+17:54:46.282 [Test worker] DEBUG com.intuit.karate - request:
 1 &gt; POST https://api.demoblaze.com/signup
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 50
@@ -107,21 +107,21 @@
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;davidSofkacbz1v9&quot;,&quot;password&quot;:&quot;12345&quot;}
+{&quot;username&quot;:&quot;davidSofkartg7ow&quot;,&quot;password&quot;:&quot;12345&quot;}
 
-16:58:53.968 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 269
+17:54:46.561 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 278
 1 &lt; 200
 1 &lt; Content-Type: application/json
-1 &lt; X-Cloud-Trace-Context: f97cc0e16a0e155029e91565d91a78da
-1 &lt; Date: Sat, 10 May 2025 21:58:51 GMT
+1 &lt; X-Cloud-Trace-Context: 03db72efb9249b91466147760ae7c2e9
+1 &lt; Date: Sat, 10 May 2025 22:54:46 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Content-Length: 3
 &quot;&quot;
 
 
-16:58:53.980 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
-16:58:53.984 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
-16:58:53.987 [Test worker] DEBUG com.intuit.karate - request:
+17:54:46.571 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:54:46.576 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+17:54:46.578 [Test worker] DEBUG com.intuit.karate - request:
 1 &gt; POST https://api.demoblaze.com/signup
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 48
@@ -131,25 +131,25 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;david3505Sokfa&quot;,&quot;password&quot;:&quot;12345&quot;}
 
-16:58:54.216 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 228
+17:54:46.820 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 240
 1 &lt; 200
-1 &lt; Content-Type: application/json
-1 &lt; Vary: Accept-Encoding
-1 &lt; X-Cloud-Trace-Context: 047bad19a6dd71c704082c69a058196d
-1 &lt; Date: Sat, 10 May 2025 21:58:51 GMT
-1 &lt; Server: Google Frontend
+1 &lt; content-type: application/json
+1 &lt; vary: Accept-Encoding
+1 &lt; x-cloud-trace-context: 82a1eba3d65e79661b175d8625138839
+1 &lt; date: Sat, 10 May 2025 22:54:46 GMT
+1 &lt; server: Google Frontend
 1 &lt; Transfer-Encoding: chunked
 {&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
 
 
 ---------------------------------------------------------
 feature: classpath:examples/features/signUp/signUp.feature
-scenarios:  2 | passed:  2 | failed:  0 | time: 0,5308
+scenarios:  2 | passed:  2 | failed:  0 | time: 0,5509
 ---------------------------------------------------------
 
 Karate version: 1.5.1
 ======================================================
-elapsed:   0,70 | threads:    1 | thread time: 0,53 
+elapsed:   0,72 | threads:    1 | thread time: 0,55 
 features:     1 | skipped:    0 | efficiency: 0,76
 scenarios:    2 | passed:     2 | failed: 0
 ======================================================
@@ -169,7 +169,7 @@ file:///F:/Documentos/Karate/KarateDemoBlaze/build/karate-reports/karate-summary
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 10 may. 2025 16:58:54</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 10 may. 2025 17:54:47</p>
 </div>
 </div>
 </body>

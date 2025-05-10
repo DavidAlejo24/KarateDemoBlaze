@@ -8,7 +8,7 @@ Feature: Login de un cliente en DemoBlaze - https://www.demoblaze.com/index.html
     * print 'Dominio de Demo Blaze ' , domainURL
 
 
-  Scenario: Login de un Cliente exitosamente con credenciales correctas
+  Scenario: LOGIN de un Cliente exitosamente con CREDENCIALES CORRECTAS
     Given url domainURL + path
     And request { username: '#(dataRegisteredUser.user.username)', password: '#(dataRegisteredUser.user.passwordEncripted)' }
     When method POST
@@ -20,7 +20,7 @@ Feature: Login de un cliente en DemoBlaze - https://www.demoblaze.com/index.html
     And match response contains 'Auth_token:'
     And assert responseTime < 5000
 
-  Scenario: Intentar login de un Cliente con Username que no existe
+  Scenario: Intentar LOGIN de un Cliente con USERNAME que no EXISTE
     Given url domainURL + path
     And request { username: '#(dataRegisteredUser.user.failUsername)', password: '#(dataRegisteredUser.user.password)' }
     When method POST
@@ -34,7 +34,7 @@ Feature: Login de un cliente en DemoBlaze - https://www.demoblaze.com/index.html
     And assert responseTime < 5000
 
 
-  Scenario: Intentar login de un Cliente con Contraseña incorrecta
+  Scenario: Intentar LOGIN de un Cliente con CONTRASEÑA INCORRECTA
     Given url domainURL + path
     And request { username: '#(dataRegisteredUser.user.username)', password: '#(dataRegisteredUser.user.failPassword)' }
     When method POST

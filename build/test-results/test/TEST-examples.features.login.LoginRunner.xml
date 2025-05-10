@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.features.login.LoginRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-10T21:58:52" hostname="DESKTOP-PK8219C" time="1.207">
+<testsuite name="examples.features.login.LoginRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-10T22:54:45" hostname="DESKTOP-PK8219C" time="1.182">
   <properties/>
-  <testcase name="[1:11] Login de un Cliente exitosamente con credenciales correctas" classname="examples.features.login.LoginRunner" time="0.324"/>
-  <testcase name="[2:23] Intentar login de un Cliente con Username que no existe" classname="examples.features.login.LoginRunner" time="0.26"/>
-  <testcase name="[3:37] Intentar login de un Cliente con Contraseña incorrecta" classname="examples.features.login.LoginRunner" time="0.62"/>
-  <system-out><![CDATA[16:58:52.427 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-16:58:52.459 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
-16:58:52.469 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
-16:58:52.473 [Test worker] DEBUG com.intuit.karate - request:
+  <testcase name="[1:11] LOGIN de un Cliente exitosamente con CREDENCIALES CORRECTAS" classname="examples.features.login.LoginRunner" time="0.307"/>
+  <testcase name="[2:23] Intentar LOGIN de un Cliente con USERNAME que no EXISTE" classname="examples.features.login.LoginRunner" time="0.263"/>
+  <testcase name="[3:37] Intentar LOGIN de un Cliente con CONTRASEÑA INCORRECTA" classname="examples.features.login.LoginRunner" time="0.608"/>
+  <system-out><![CDATA[17:54:45.049 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:54:45.075 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:54:45.084 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+17:54:45.089 [Test worker] DEBUG com.intuit.karate - request:
 1 > POST https://api.demoblaze.com/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 51
@@ -17,20 +17,20 @@
 1 > Accept-Encoding: gzip,deflate
 {"username":"david3505Sokfa","password":"MTIzNDU="}
 
-16:58:52.767 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 292
+17:54:45.366 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 275
 1 < 200
-1 < content-type: application/json
-1 < vary: Accept-Encoding
-1 < x-cloud-trace-context: e30ec9142af6e25957d5399391e95908
-1 < date: Sat, 10 May 2025 21:58:49 GMT
-1 < server: Google Frontend
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 1def4d8f8eb49380fe1d1cf251eabaea
+1 < Date: Sat, 10 May 2025 22:54:45 GMT
+1 < Server: Google Frontend
 1 < Transfer-Encoding: chunked
-"Auth_token: ZGF2aWQzNTA1U29rZmExNzQ3NTE0"
+"Auth_token: ZGF2aWQzNTA1U29rZmExNzQ3NTE3"
 
 
-16:58:52.780 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
-16:58:52.784 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
-16:58:52.787 [Test worker] DEBUG com.intuit.karate - request:
+17:54:45.381 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:54:45.385 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+17:54:45.389 [Test worker] DEBUG com.intuit.karate - request:
 1 > POST https://api.demoblaze.com/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 63
@@ -40,20 +40,20 @@
 1 > Accept-Encoding: gzip,deflate
 {"username":"Panecillo3505SokfaInexistente","password":"12345"}
 
-16:58:53.030 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 243
+17:54:45.634 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 243
 1 < 200
 1 < content-type: application/json
 1 < vary: Accept-Encoding
-1 < x-cloud-trace-context: 798f206d01081ce162e3cf0e37a9b7f5
-1 < date: Sat, 10 May 2025 21:58:50 GMT
+1 < x-cloud-trace-context: 5c7e45a1a92bf81fc9c80cbca53526a0
+1 < date: Sat, 10 May 2025 22:54:45 GMT
 1 < server: Google Frontend
 1 < Transfer-Encoding: chunked
 {"errorMessage":"User does not exist."}
 
 
-16:58:53.041 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
-16:58:53.045 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
-16:58:53.047 [Test worker] DEBUG com.intuit.karate - request:
+17:54:45.644 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:54:45.648 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+17:54:45.650 [Test worker] DEBUG com.intuit.karate - request:
 1 > POST https://api.demoblaze.com/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 48
@@ -63,26 +63,26 @@
 1 > Accept-Encoding: gzip,deflate
 {"username":"david3505Sokfa","password":"56789"}
 
-16:58:53.336 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 287
+17:54:45.882 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 230
 1 < 200
-1 < Content-Type: application/json
-1 < Vary: Accept-Encoding
-1 < X-Cloud-Trace-Context: 107ff50f3776b2618d42f17c83d1716e
-1 < Date: Sat, 10 May 2025 21:58:50 GMT
-1 < Server: Google Frontend
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: e6b088bc632410b9afcd28d21434a31a
+1 < date: Sat, 10 May 2025 22:54:45 GMT
+1 < server: Google Frontend
 1 < Transfer-Encoding: chunked
 {"errorMessage":"Wrong password."}
 
 
 ---------------------------------------------------------
 feature: classpath:examples/features/login/login.feature
-scenarios:  3 | passed:  3 | failed:  0 | time: 0,8637
+scenarios:  3 | passed:  3 | failed:  0 | time: 0,7925
 ---------------------------------------------------------
 
 Karate version: 1.5.1
 ======================================================
-elapsed:   1,15 | threads:    1 | thread time: 0,86 
-features:     1 | skipped:    0 | efficiency: 0,75
+elapsed:   1,09 | threads:    1 | thread time: 0,79 
+features:     1 | skipped:    0 | efficiency: 0,73
 scenarios:    3 | passed:     3 | failed: 0
 ======================================================
 
