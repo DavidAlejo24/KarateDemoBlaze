@@ -1,6 +1,9 @@
 {
   "user": {
     "username": "david3505Sokfa",
-    "password": "12345"
+    "failUsername": "Panecillo3505SokfaInexistente",
+    "password": "12345",
+    "passwordEncripted": "MTIzNDU=",
+    "failPassword": "56789"
   }
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.features.signUp.SignUpRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-10T08:26:52" hostname="DESKTOP-PK8219C" time="0.909">
+<testsuite name="examples.features.signUp.SignUpRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-10T21:58:53" hostname="DESKTOP-PK8219C" time="0.771">
   <properties/>
-  <testcase name="[1:12] Registrar un nuevo cliente exitosamente" classname="examples.features.signUp.SignUpRunner" time="0.359"/>
-  <testcase name="[2:27] Intentar Registrar un cliente ya existente" classname="examples.features.signUp.SignUpRunner" time="0.548"/>
-  <system-out><![CDATA[03:26:52.115 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-03:26:52.143 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
-03:26:52.156 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
-03:26:52.159 [Test worker] INFO  com.intuit.karate - [print] Se guardara el usuario con el username  davidSofka7ge6ec 
-03:26:52.164 [Test worker] DEBUG com.intuit.karate - request:
+  <testcase name="[1:12] Registrar un nuevo cliente exitosamente" classname="examples.features.signUp.SignUpRunner" time="0.303"/>
+  <testcase name="[2:27] Intentar Registrar un cliente ya existente" classname="examples.features.signUp.SignUpRunner" time="0.466"/>
+  <system-out><![CDATA[16:58:53.664 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:58:53.678 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:53.689 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+16:58:53.693 [Test worker] INFO  com.intuit.karate - [print] Se guardara el usuario con el username  davidSofkacbz1v9 
+16:58:53.699 [Test worker] DEBUG com.intuit.karate - request:
 1 > POST https://api.demoblaze.com/signup
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 50
@@ -15,21 +15,21 @@
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
 1 > Accept-Encoding: gzip,deflate
-{"username":"davidSofka7ge6ec","password":"12345"}
+{"username":"davidSofkacbz1v9","password":"12345"}
 
-03:26:52.487 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 322
+16:58:53.968 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 269
 1 < 200
 1 < Content-Type: application/json
-1 < X-Cloud-Trace-Context: 17f14c5d454af32688418dfeee2236cf
-1 < Date: Sat, 10 May 2025 08:26:52 GMT
+1 < X-Cloud-Trace-Context: f97cc0e16a0e155029e91565d91a78da
+1 < Date: Sat, 10 May 2025 21:58:51 GMT
 1 < Server: Google Frontend
 1 < Content-Length: 3
 ""
 
 
-03:26:52.502 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
-03:26:52.513 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
-03:26:52.517 [Test worker] DEBUG com.intuit.karate - request:
+16:58:53.980 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:53.984 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+16:58:53.987 [Test worker] DEBUG com.intuit.karate - request:
 1 > POST https://api.demoblaze.com/signup
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 48
@@ -39,12 +39,12 @@
 1 > Accept-Encoding: gzip,deflate
 {"username":"david3505Sokfa","password":"12345"}
 
-03:26:52.778 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 260
+16:58:54.216 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 228
 1 < 200
 1 < Content-Type: application/json
 1 < Vary: Accept-Encoding
-1 < X-Cloud-Trace-Context: 845bcfefae0fdb882313403644b82c20
-1 < Date: Sat, 10 May 2025 08:26:52 GMT
+1 < X-Cloud-Trace-Context: 047bad19a6dd71c704082c69a058196d
+1 < Date: Sat, 10 May 2025 21:58:51 GMT
 1 < Server: Google Frontend
 1 < Transfer-Encoding: chunked
 {"errorMessage":"This user already exist."}
@@ -52,13 +52,13 @@
 
 ---------------------------------------------------------
 feature: classpath:examples/features/signUp/signUp.feature
-scenarios:  2 | passed:  2 | failed:  0 | time: 0,6255
+scenarios:  2 | passed:  2 | failed:  0 | time: 0,5308
 ---------------------------------------------------------
 
 Karate version: 1.5.1
 ======================================================
-elapsed:   0,85 | threads:    1 | thread time: 0,63 
-features:     1 | skipped:    0 | efficiency: 0,74
+elapsed:   0,70 | threads:    1 | thread time: 0,53 
+features:     1 | skipped:    0 | efficiency: 0,76
 scenarios:    2 | passed:     2 | failed: 0
 ======================================================
 

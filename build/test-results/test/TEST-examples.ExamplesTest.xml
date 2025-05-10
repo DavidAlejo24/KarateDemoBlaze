@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.ExamplesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-10T08:26:46" hostname="DESKTOP-PK8219C" time="5.286">
+<testsuite name="examples.ExamplesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-10T21:58:46" hostname="DESKTOP-PK8219C" time="5.585">
   <properties/>
-  <testcase name="testParallel()" classname="examples.ExamplesTest" time="5.286"/>
-  <system-out><![CDATA[03:26:48.241 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-03:26:48.251 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1746865608247
-03:26:48.258 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
-03:26:49.615 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-03:26:49.615 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-03:26:49.615 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-03:26:49.615 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-03:26:49.738 [pool-1-thread-4] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
-03:26:49.738 [pool-1-thread-3] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
-03:26:49.768 [pool-1-thread-3] INFO  com.intuit.karate - [print] Se guardara el usuario con el username  davidSofka12uil 
-03:26:49.916 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-1 > GET https://jsonplaceholder.typicode.com/users
-1 > Host: jsonplaceholder.typicode.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:26:49.917 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-1 > POST https://api.demoblaze.com/signup
+  <testcase name="testParallel()" classname="examples.ExamplesTest" time="5.585"/>
+  <system-out><![CDATA[16:58:48.286 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:58:48.298 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1746914328293
+16:58:48.307 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:58:49.797 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:49.797 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:49.797 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:49.797 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:49.797 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:58:49.936 [pool-1-thread-3] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+16:58:49.936 [pool-1-thread-2] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+16:58:49.936 [pool-1-thread-4] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+16:58:49.936 [pool-1-thread-5] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+16:58:49.937 [pool-1-thread-1] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+16:58:49.966 [pool-1-thread-4] INFO  com.intuit.karate - [print] Se guardara el usuario con el username  davidSofkafi882a 
+16:58:50.255 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 49
+1 > Content-Length: 63
 1 > Host: api.demoblaze.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
 1 > Accept-Encoding: gzip,deflate
-{"username":"davidSofka12uil","password":"12345"}
+{"username":"Panecillo3505SokfaInexistente","password":"12345"}
 
-03:26:49.917 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+16:58:50.255 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"username":"david3505Sokfa","password":"MTIzNDU="}
+
+16:58:50.255 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 1 > POST https://api.demoblaze.com/signup
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 48
@@ -40,415 +46,97 @@
 1 > Accept-Encoding: gzip,deflate
 {"username":"david3505Sokfa","password":"12345"}
 
-03:26:49.917 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > POST https://jsonplaceholder.typicode.com/users
+16:58:50.255 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 160
-1 > Host: jsonplaceholder.typicode.com
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
 1 > Accept-Encoding: gzip,deflate
-{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+{"username":"davidSofkafi882a","password":"12345"}
 
-03:26:50.185 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 264
-1 < 200
-1 < Date: Sat, 10 May 2025 08:26:50 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Transfer-Encoding: chunked
-1 < Connection: keep-alive
-1 < Server: cloudflare
-1 < Cf-Ray: 93d80dcedf9183fe-GYE
-1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746850747&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=8h1keQO1Zf7n8UkfG9znGwF66Y6WzEQq5f9rcj5CsEY%3D"}]}
-1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1746850747&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=8h1keQO1Zf7n8UkfG9znGwF66Y6WzEQq5f9rcj5CsEY%3D
-1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
-1 < X-Powered-By: Express
-1 < X-Ratelimit-Limit: 1000
-1 < X-Ratelimit-Remaining: 998
-1 < X-Ratelimit-Reset: 1746850781
-1 < Vary: Origin, Accept-Encoding
-1 < Access-Control-Allow-Credentials: true
-1 < Cache-Control: max-age=43200
-1 < Pragma: no-cache
-1 < Expires: -1
-1 < X-Content-Type-Options: nosniff
-1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
-1 < Via: 1.1 vegur
-1 < Age: 14862
-1 < Cf-Cache-Status: HIT
-1 < alt-svc: h3=":443"; ma=86400
-1 < server-timing: cfL4;desc="?proto=TCP&rtt=7950&min_rtt=7625&rtt_var=3092&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3111&recv_bytes=790&delivery_rate=555540&cwnd=252&unsent_bytes=0&cid=965f238191585468&ts=111&x=0"
-[
-  {
-    "id": 1,
-    "name": "Leanne Graham",
-    "username": "Bret",
-    "email": "Sincere@april.biz",
-    "address": {
-      "street": "Kulas Light",
-      "suite": "Apt. 556",
-      "city": "Gwenborough",
-      "zipcode": "92998-3874",
-      "geo": {
-        "lat": "-37.3159",
-        "lng": "81.1496"
-      }
-    },
-    "phone": "1-770-736-8031 x56442",
-    "website": "hildegard.org",
-    "company": {
-      "name": "Romaguera-Crona",
-      "catchPhrase": "Multi-layered client-server neural-net",
-      "bs": "harness real-time e-markets"
-    }
-  },
-  {
-    "id": 2,
-    "name": "Ervin Howell",
-    "username": "Antonette",
-    "email": "Shanna@melissa.tv",
-    "address": {
-      "street": "Victor Plains",
-      "suite": "Suite 879",
-      "city": "Wisokyburgh",
-      "zipcode": "90566-7771",
-      "geo": {
-        "lat": "-43.9509",
-        "lng": "-34.4618"
-      }
-    },
-    "phone": "010-692-6593 x09125",
-    "website": "anastasia.net",
-    "company": {
-      "name": "Deckow-Crist",
-      "catchPhrase": "Proactive didactic contingency",
-      "bs": "synergize scalable supply-chains"
-    }
-  },
-  {
-    "id": 3,
-    "name": "Clementine Bauch",
-    "username": "Samantha",
-    "email": "Nathan@yesenia.net",
-    "address": {
-      "street": "Douglas Extension",
-      "suite": "Suite 847",
-      "city": "McKenziehaven",
-      "zipcode": "59590-4157",
-      "geo": {
-        "lat": "-68.6102",
-        "lng": "-47.0653"
-      }
-    },
-    "phone": "1-463-123-4447",
-    "website": "ramiro.info",
-    "company": {
-      "name": "Romaguera-Jacobson",
-      "catchPhrase": "Face to face bifurcated interface",
-      "bs": "e-enable strategic applications"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Patricia Lebsack",
-    "username": "Karianne",
-    "email": "Julianne.OConner@kory.org",
-    "address": {
-      "street": "Hoeger Mall",
-      "suite": "Apt. 692",
-      "city": "South Elvis",
-      "zipcode": "53919-4257",
-      "geo": {
-        "lat": "29.4572",
-        "lng": "-164.2990"
-      }
-    },
-    "phone": "493-170-9623 x156",
-    "website": "kale.biz",
-    "company": {
-      "name": "Robel-Corkery",
-      "catchPhrase": "Multi-tiered zero tolerance productivity",
-      "bs": "transition cutting-edge web services"
-    }
-  },
-  {
-    "id": 5,
-    "name": "Chelsey Dietrich",
-    "username": "Kamren",
-    "email": "Lucio_Hettinger@annie.ca",
-    "address": {
-      "street": "Skiles Walks",
-      "suite": "Suite 351",
-      "city": "Roscoeview",
-      "zipcode": "33263",
-      "geo": {
-        "lat": "-31.8129",
-        "lng": "62.5342"
-      }
-    },
-    "phone": "(254)954-1289",
-    "website": "demarco.info",
-    "company": {
-      "name": "Keebler LLC",
-      "catchPhrase": "User-centric fault-tolerant solution",
-      "bs": "revolutionize end-to-end systems"
-    }
-  },
-  {
-    "id": 6,
-    "name": "Mrs. Dennis Schulist",
-    "username": "Leopoldo_Corkery",
-    "email": "Karley_Dach@jasper.info",
-    "address": {
-      "street": "Norberto Crossing",
-      "suite": "Apt. 950",
-      "city": "South Christy",
-      "zipcode": "23505-1337",
-      "geo": {
-        "lat": "-71.4197",
-        "lng": "71.7478"
-      }
-    },
-    "phone": "1-477-935-8478 x6430",
-    "website": "ola.org",
-    "company": {
-      "name": "Considine-Lockman",
-      "catchPhrase": "Synchronised bottom-line interface",
-      "bs": "e-enable innovative applications"
-    }
-  },
-  {
-    "id": 7,
-    "name": "Kurtis Weissnat",
-    "username": "Elwyn.Skiles",
-    "email": "Telly.Hoeger@billy.biz",
-    "address": {
-      "street": "Rex Trail",
-      "suite": "Suite 280",
-      "city": "Howemouth",
-      "zipcode": "58804-1099",
-      "geo": {
-        "lat": "24.8918",
-        "lng": "21.8984"
-      }
-    },
-    "phone": "210.067.6132",
-    "website": "elvis.io",
-    "company": {
-      "name": "Johns Group",
-      "catchPhrase": "Configurable multimedia task-force",
-      "bs": "generate enterprise e-tailers"
-    }
-  },
-  {
-    "id": 8,
-    "name": "Nicholas Runolfsdottir V",
-    "username": "Maxime_Nienow",
-    "email": "Sherwood@rosamond.me",
-    "address": {
-      "street": "Ellsworth Summit",
-      "suite": "Suite 729",
-      "city": "Aliyaview",
-      "zipcode": "45169",
-      "geo": {
-        "lat": "-14.3990",
-        "lng": "-120.7677"
-      }
-    },
-    "phone": "586.493.6943 x140",
-    "website": "jacynthe.com",
-    "company": {
-      "name": "Abernathy Group",
-      "catchPhrase": "Implemented secondary concept",
-      "bs": "e-enable extensible e-tailers"
-    }
-  },
-  {
-    "id": 9,
-    "name": "Glenna Reichert",
-    "username": "Delphine",
-    "email": "Chaim_McDermott@dana.io",
-    "address": {
-      "street": "Dayna Park",
-      "suite": "Suite 449",
-      "city": "Bartholomebury",
-      "zipcode": "76495-3109",
-      "geo": {
-        "lat": "24.6463",
-        "lng": "-168.8889"
-      }
-    },
-    "phone": "(775)976-6794 x41206",
-    "website": "conrad.com",
-    "company": {
-      "name": "Yost and Sons",
-      "catchPhrase": "Switchable contextually-based project",
-      "bs": "aggregate real-time technologies"
-    }
-  },
-  {
-    "id": 10,
-    "name": "Clementina DuBuque",
-    "username": "Moriah.Stanton",
-    "email": "Rey.Padberg@karina.biz",
-    "address": {
-      "street": "Kattie Turnpike",
-      "suite": "Suite 198",
-      "city": "Lebsackbury",
-      "zipcode": "31428-2261",
-      "geo": {
-        "lat": "-38.2386",
-        "lng": "57.2232"
-      }
-    },
-    "phone": "024-648-3804",
-    "website": "ambrose.net",
-    "company": {
-      "name": "Hoeger LLC",
-      "catchPhrase": "Centralized empowering task-force",
-      "bs": "target end-to-end models"
-    }
-  }
-]
+16:58:50.255 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 48
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"username":"david3505Sokfa","password":"56789"}
 
-03:26:50.212 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-2 > GET https://jsonplaceholder.typicode.com/users/1
-2 > Host: jsonplaceholder.typicode.com
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-2 > Accept-Encoding: gzip,deflate
-
-
-03:26:50.259 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 47
-2 < 200
-2 < Date: Sat, 10 May 2025 08:26:50 GMT
-2 < Content-Type: application/json; charset=utf-8
-2 < Transfer-Encoding: chunked
-2 < Connection: keep-alive
-2 < Cf-Ray: 93d80dcf7fd683fe-GYE
-2 < Server: cloudflare
-2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746850748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=O0ESe4ZFouaeVG54YnEzgeiY4PtpUamP7M2Od9R6XTA%3D"}]}
-2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1746850748&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=O0ESe4ZFouaeVG54YnEzgeiY4PtpUamP7M2Od9R6XTA%3D
-2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
-2 < X-Powered-By: Express
-2 < X-Ratelimit-Limit: 1000
-2 < X-Ratelimit-Remaining: 997
-2 < X-Ratelimit-Reset: 1746850781
-2 < Vary: Origin, Accept-Encoding
-2 < Access-Control-Allow-Credentials: true
-2 < Cache-Control: max-age=43200
-2 < Pragma: no-cache
-2 < Expires: -1
-2 < X-Content-Type-Options: nosniff
-2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
-2 < Via: 1.1 vegur
-2 < Age: 14861
-2 < Cf-Cache-Status: HIT
-2 < alt-svc: h3=":443"; ma=86400
-2 < server-timing: cfL4;desc="?proto=TCP&rtt=8133&min_rtt=7873&rtt_var=3474&sent=3&recv=6&lost=0&retrans=0&sent_bytes=219&recv_bytes=1239&delivery_rate=141781&cwnd=250&unsent_bytes=0&cid=355a74e99d7b2e92&ts=22&x=0"
-{
-  "id": 1,
-  "name": "Leanne Graham",
-  "username": "Bret",
-  "email": "Sincere@april.biz",
-  "address": {
-    "street": "Kulas Light",
-    "suite": "Apt. 556",
-    "city": "Gwenborough",
-    "zipcode": "92998-3874",
-    "geo": {
-      "lat": "-37.3159",
-      "lng": "81.1496"
-    }
-  },
-  "phone": "1-770-736-8031 x56442",
-  "website": "hildegard.org",
-  "company": {
-    "name": "Romaguera-Crona",
-    "catchPhrase": "Multi-layered client-server neural-net",
-    "bs": "harness real-time e-markets"
-  }
-}
-
-03:26:50.325 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 406
+16:58:50.806 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 548
 1 < 200
 1 < Content-Type: application/json
 1 < Vary: Accept-Encoding
-1 < X-Cloud-Trace-Context: 646df30b0e33e314c967318f365e74c1
-1 < Date: Sat, 10 May 2025 08:26:50 GMT
+1 < X-Cloud-Trace-Context: 19907c98e2cae5ac7c508b79413d0d4f
+1 < Date: Sat, 10 May 2025 21:58:48 GMT
 1 < Server: Google Frontend
 1 < Transfer-Encoding: chunked
 {"errorMessage":"This user already exist."}
 
 
-03:26:50.374 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 455
+16:58:50.806 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 548
 1 < 200
 1 < Content-Type: application/json
-1 < X-Cloud-Trace-Context: 8b3bf1780dfb55829062437cda00c4ed
-1 < Date: Sat, 10 May 2025 08:26:50 GMT
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 42395545da53f6a01dcce8b2ddf711af
+1 < Date: Sat, 10 May 2025 21:58:48 GMT
 1 < Server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+16:58:50.819 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 562
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 93b13adf1a3946e82b962d853a3c2ca1;o=1
+1 < Date: Sat, 10 May 2025 21:58:48 GMT
+1 < Server: Google Frontend
+1 < Transfer-Encoding: chunked
+"Auth_token: ZGF2aWQzNTA1U29rZmExNzQ3NTE0"
+
+
+16:58:50.828 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 570
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: a8725529207cd27190f5e30b2a7da0cf
+1 < Date: Sat, 10 May 2025 21:58:48 GMT
+1 < Server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+16:58:50.888 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 631
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 8b07868d5424ab64eca51f1fa006c539
+1 < date: Sat, 10 May 2025 21:58:48 GMT
+1 < server: Google Frontend
 1 < Content-Length: 3
 ""
 
 
-03:26:50.737 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 817
-1 < 201
-1 < Date: Sat, 10 May 2025 08:26:50 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 216
-1 < Connection: keep-alive
-1 < Server: cloudflare
-1 < Cf-Ray: 93d80dced8fa8252-GYE
-1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746865610&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ly94iwrxo2HmGuK9BkAKMQh4jC99eucb0Fah4hv1Su4%3D"}]}
-1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1746865610&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ly94iwrxo2HmGuK9BkAKMQh4jC99eucb0Fah4hv1Su4%3D
-1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
-1 < X-Powered-By: Express
-1 < X-Ratelimit-Limit: 1000
-1 < X-Ratelimit-Remaining: 999
-1 < X-Ratelimit-Reset: 1746865661
-1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
-1 < Access-Control-Allow-Credentials: true
-1 < Cache-Control: no-cache
-1 < Pragma: no-cache
-1 < Expires: -1
-1 < Access-Control-Expose-Headers: Location
-1 < Location: https://jsonplaceholder.typicode.com/users/11
-1 < X-Content-Type-Options: nosniff
-1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
-1 < Via: 1.1 vegur
-1 < Cf-Cache-Status: DYNAMIC
-1 < alt-svc: h3=":443"; ma=86400
-1 < server-timing: cfL4;desc="?proto=TCP&rtt=7775&min_rtt=7666&rtt_var=2953&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3110&recv_bytes=1019&delivery_rate=552569&cwnd=252&unsent_bytes=0&cid=63d1035f2eea7de1&ts=680&x=0"
-{
-  "name": "Test User",
-  "username": "testuser",
-  "email": "test@user.com",
-  "address": {
-    "street": "Has No Name",
-    "suite": "Apt. 123",
-    "city": "Electri",
-    "zipcode": "54321-6789"
-  },
-  "id": 11
-}
-
-03:26:50.742 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
 ---------------------------------------------------------
-feature: classpath:examples/features/login/users.feature
-scenarios:  2 | passed:  2 | failed:  0 | time: 1,6675
+feature: classpath:examples/features/login/login.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 3,0563
 ---------------------------------------------------------
 
-03:26:51.611 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:examples/features/login/users.feature
+16:58:51.953 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:examples/features/login/login.feature
 ---------------------------------------------------------
 feature: classpath:examples/features/signUp/signUp.feature
-scenarios:  2 | passed:  2 | failed:  0 | time: 1,4017
+scenarios:  2 | passed:  2 | failed:  0 | time: 2,0701
 ---------------------------------------------------------
 
-03:26:51.884 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:examples/features/signUp/signUp.feature
+16:58:52.201 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:examples/features/signUp/signUp.feature
 Karate version: 1.5.1
 ======================================================
-elapsed:   4,64 | threads:    5 | thread time: 3,07 
-features:     2 | skipped:    0 | efficiency: 0,13
-scenarios:    4 | passed:     4 | failed: 0
+elapsed:   4,96 | threads:    5 | thread time: 5,13 
+features:     2 | skipped:    0 | efficiency: 0,21
+scenarios:    5 | passed:     5 | failed: 0
 ======================================================
 
 HTML report: (paste into browser to view) | Karate version: 1.5.1

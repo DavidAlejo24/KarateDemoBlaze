@@ -1,4 +1,4 @@
-Feature: Registro de un nuevo cliente en DemoBlaze mediante https://api.demoblaze.com
+Feature: Registro de un nuevo cliente en DemoBlaze - https://www.demoblaze.com/index.html
 
 
   Background:
@@ -17,7 +17,7 @@ Feature: Registro de un nuevo cliente en DemoBlaze mediante https://api.demoblaz
     When method POST
     Then status 200
     * karate.pause(1000)
-    Then match responseHeaders['Content-Type'] == ["application/json"] || "application/json"
+    Then match karate.response.header('content-type') == 'application/json'
     Then match response == '#string'
     Then match response != 'null'
     And match response contains ""
@@ -30,7 +30,7 @@ Feature: Registro de un nuevo cliente en DemoBlaze mediante https://api.demoblaz
     When method POST
     * karate.pause(1000)
     Then status 200
-    Then match responseHeaders['Content-Type'] == ["application/json"] || "application/json"
+    Then match karate.response.header('content-type') == 'application/json'
     Then match response.errorMessage == '#string'
     Then match response.errorMessage != 'null'
     And match response.errorMessage == 'This user already exist.'
