@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class examples.features.signUp.SignUpRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class examples.features.signUp.SignUpRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/examples.features.signUp.html">examples.features.signUp</a> &gt; SignUpRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.907s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[1:12] Registrar un nuevo cliente exitosamente</td>
+<td class="success">testSignUp()[1][1]</td>
+<td class="success">0.359s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2:27] Intentar Registrar un cliente ya existente</td>
+<td class="success">testSignUp()[1][2]</td>
+<td class="success">0.548s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>03:26:52.115 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:26:52.143 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+03:26:52.156 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+03:26:52.159 [Test worker] INFO  com.intuit.karate - [print] Se guardara el usuario con el username  davidSofka7ge6ec 
+03:26:52.164 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 50
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;davidSofka7ge6ec&quot;,&quot;password&quot;:&quot;12345&quot;}
+
+03:26:52.487 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 322
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; X-Cloud-Trace-Context: 17f14c5d454af32688418dfeee2236cf
+1 &lt; Date: Sat, 10 May 2025 08:26:52 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 3
+&quot;&quot;
+
+
+03:26:52.502 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+03:26:52.513 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+03:26:52.517 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 48
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;david3505Sokfa&quot;,&quot;password&quot;:&quot;12345&quot;}
+
+03:26:52.778 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 260
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 845bcfefae0fdb882313403644b82c20
+1 &lt; Date: Sat, 10 May 2025 08:26:52 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+
+
+---------------------------------------------------------
+feature: classpath:examples/features/signUp/signUp.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0,6255
+---------------------------------------------------------
+
+Karate version: 1.5.1
+======================================================
+elapsed:   0,85 | threads:    1 | thread time: 0,63 
+features:     1 | skipped:    0 | efficiency: 0,74
+scenarios:    2 | passed:     2 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///F:/Documentos/Karate/KarateDemoBlaze/build/karate-reports/karate-summary.html
+===================================================================
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at 10 may. 2025 03:26:54</p>
+</div>
+</div>
+</body>
+</html>

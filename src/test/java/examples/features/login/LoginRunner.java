@@ -1,0 +1,12 @@
+package examples.features.login;
+
+import com.intuit.karate.junit5.Karate;
+
+class LoginRunner {
+    
+    @Karate.Test
+    Karate testLogin() {
+        return Karate.run("users").relativeTo(getClass());
+    }    
+
+}

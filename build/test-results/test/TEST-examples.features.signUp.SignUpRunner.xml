@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="examples.features.signUp.SignUpRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-10T08:26:52" hostname="DESKTOP-PK8219C" time="0.909">
+  <properties/>
+  <testcase name="[1:12] Registrar un nuevo cliente exitosamente" classname="examples.features.signUp.SignUpRunner" time="0.359"/>
+  <testcase name="[2:27] Intentar Registrar un cliente ya existente" classname="examples.features.signUp.SignUpRunner" time="0.548"/>
+  <system-out><![CDATA[03:26:52.115 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:26:52.143 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+03:26:52.156 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+03:26:52.159 [Test worker] INFO  com.intuit.karate - [print] Se guardara el usuario con el username  davidSofka7ge6ec 
+03:26:52.164 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"username":"davidSofka7ge6ec","password":"12345"}
+
+03:26:52.487 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 322
+1 < 200
+1 < Content-Type: application/json
+1 < X-Cloud-Trace-Context: 17f14c5d454af32688418dfeee2236cf
+1 < Date: Sat, 10 May 2025 08:26:52 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+03:26:52.502 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+03:26:52.513 [Test worker] INFO  com.intuit.karate - [print] Dominio de Demo Blaze  https://api.demoblaze.com 
+03:26:52.517 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 48
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"username":"david3505Sokfa","password":"12345"}
+
+03:26:52.778 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 260
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 845bcfefae0fdb882313403644b82c20
+1 < Date: Sat, 10 May 2025 08:26:52 GMT
+1 < Server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+---------------------------------------------------------
+feature: classpath:examples/features/signUp/signUp.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0,6255
+---------------------------------------------------------
+
+Karate version: 1.5.1
+======================================================
+elapsed:   0,85 | threads:    1 | thread time: 0,63 
+features:     1 | skipped:    0 | efficiency: 0,74
+scenarios:    2 | passed:     2 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///F:/Documentos/Karate/KarateDemoBlaze/build/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
